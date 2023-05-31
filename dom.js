@@ -15,3 +15,12 @@ console.log(element);
 console.log(element[0]);
 element[0].style.fontWeight ='bold';
 element[0].style.color='green';
+
+var element1=document.getElementsByClassName('list-group-item');
+console.log(element1);
+element1[2].style.backgroundColor='green';
+
+for(var i=0;i<element1.length;i++){
+    element1[i].style.fontWeight = 'bold';
+
+}
