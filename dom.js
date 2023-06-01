@@ -31,7 +31,7 @@ for(var i=0;i<element1.length;i++){
 
 //getelementbytagname
 
-var li=document.getElementsByTagName('li');
+/*var li=document.getElementsByTagName('li');
 console.log(li);
 console.log(li[0]);
 li[0].style.fontWeight ='bold';
@@ -41,7 +41,19 @@ li[0].style.color='green';
 for(var i=0;i<li.length;i++){
     li[i].style.fontWeight = 'bold';
 
-}
+}*/
+
+var lists=document.querySelector('.list-group-item:nth-child(2)');
+lists.style.backgroundColor='green';
+
+var newlists=document.querySelector('.list-group-item:nth-child(3)');
+newlists.style.visibility='hidden';
+
+
+
+
+
+
 
 
 
