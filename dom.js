@@ -43,13 +43,54 @@ for(var i=0;i<li.length;i++){
 
 }*/
 
-var lists=document.querySelector('.list-group-item:nth-child(2)');
-lists.style.backgroundColor='green';
+//var lists=document.querySelector('.list-group-item:nth-child(2)');
+//lists.style.backgroundColor='green';
 
-var newlists=document.querySelector('.list-group-item:nth-child(3)');
-newlists.style.visibility='hidden';
+//var newlists=document.querySelector('.list-group-item:nth-child(3)');
+//newlists.style.visibility='hidden';
 
+//trversing the dom
 
+var itemList=document.querySelector('#items');
+//parent node
+//console.log(itemList.parentNode);
+//itemList.parentNode.style.backgroundColor='#f4f4f4'
+//console.log(itemList.parentNode.parentNode.parentNode)
+
+//parentElement
+//console.log(itemList.parentElement);
+//itemList.parentElement.style.backgroundColor='#f4f4f4'
+//console.log(itemList.parentElement.parentElement.parentElement)
+
+//Child nodes
+//console.log(itemList.childNodes);
+
+//children
+//console.log(itemList.children);
+//itemList.children[1].style.backgroundColor='yellow';
+
+//FirstElementchild
+
+ //console.log(itemList.firstElementChild);
+
+//privous sibling
+//console.log(itemList.previousSibling);
+//priviousElementSibling
+//console.log(itemList.previousElementSibling); 
+
+//create element
+var newDiv=document.createElement('div');
+//console.log(newDiv);
+newDiv.className="hello";
+newDiv.id="hello1";
+newDiv.setAttribute("title","itemlist");
+var newDivText=document.createTextNode("hello world");
+newDiv.appendChild(newDivText);
+
+var container=document.querySelector('header .container');
+var h1=document.querySelector('header h1');
+console.log(newDiv);
+container.insertBefore(newDiv,h1);
 
 
 
